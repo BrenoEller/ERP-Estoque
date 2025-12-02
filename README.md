@@ -34,7 +34,7 @@ DB_PASSWORD=root
 
 Gerar a APP_KEY:
 ```bash
-docker compose run --rm backend php artisan key:generate
+docker-compose run --rm backend php artisan key:generate
 ```
 
 ### 2. Subir os containers 

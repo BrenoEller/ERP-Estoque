@@ -32,25 +32,19 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-Gerar a APP_KEY:
-```bash
-docker-compose run --rm backend php artisan key:generate
-```
-
 ### 2. Subir os containers 
 
 Na raiz do projeto (onde está o docker-compose.yml):
 
 ```bash
-docker-compose up -d --build
+docker-compose up
 ```
 
-### 3. Rodar migrações
+### 3. Rodar migrações e gerar key
 ```bash
+docker-compose exec backend php artisan key:generate
 docker-compose exec backend php artisan migrate
 ```
-
----
 
 ### Acessos
 

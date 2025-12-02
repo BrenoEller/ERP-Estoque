@@ -42,12 +42,12 @@ docker compose run --rm backend php artisan key:generate
 Na raiz do projeto (onde está o docker-compose.yml):
 
 ```bash
-docker compose up -d --build
+docker-compose up -d --build
 ```
 
 ### 3. Rodar migrações
 ```bash
-docker compose exec backend php artisan migrate
+docker-compose exec backend php artisan migrate
 ```
 
 ---
